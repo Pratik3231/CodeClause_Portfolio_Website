@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: rgb(223,218,218); 
+    font-family: 'Fira Sans', sans-serif;
+    height: 700px;
+    transition: transform 0.3s ease-in;
+    
+}
+
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 18px;
+    padding: 24px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+
+.infoContainer{
+   /* background-color: rgb(202, 9, 128); */ 
+    height: 58vh;
+    width: 77vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px ;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 3em;
+    
+}
+
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about{
+    font-size: 2.5em;
+}
+
+.moreabout{
+    font-size: 15px;
+    margin-top: 23px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.buttons button{
+    margin: 30px 0;
+    padding: 6px 10px;
+    border-radius: 22px;
+    color: white;
+    background: dodgerblue;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 10px 3px;
+    cursor: pointer;
+}
+
+.buttons :hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.btn{
+    padding: 6px 10px;
+    border-radius: 22px;
+    color: white;
+    background: dodgerblue;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 10px 3px;
+    cursor: pointer;
+}
+
+.btn-sm{
+    font-size: 14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devPic img{
+    height: 58vh;
+    
+}
+
+.contactform{
+    padding: 0 34px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 10px 88px;
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /*padding: 5px 0;*/
+}
+
+.contactform form div{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 37vw; */
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.contactform form{
+  margin: 0 30px;
+
+}
+
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogcontainer{
+    margin: 88px;
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 88px;
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundered{
+    width: 265px;
+    background-color: blueviolet;
+}
+
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.ham{
+    margin-top: -6px;
+    margin-left: 10px;
+}
+
+.humburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 130px;
+    margin-top: -6px;
+}
+
+@media (max-width: 1615px){
+    .devInfo{
+        font-size: 10px;
+    }
+    /*.devPic{
+        display: none;
+    }*/
+    .intro , .blogcontainer , .contactform{
+        margin: 50px 8px;
+    }
+}
